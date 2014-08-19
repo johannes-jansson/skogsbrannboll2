@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Onehand:</strong>
+  <%= @strike.onehand %>
+</p>
+
+<p>
+  <strong>Twohand:</strong>
+  <%= @strike.twohand %>
+</p>
+
+<p>
+  <strong>Burn:</strong>
+  <%= @strike.burn %>
+</p>
+
+<p>
+  <strong>In:</strong>
+  <%= @strike.in %>
+</p>
+
+<p>
+  <strong>Full:</strong>
+  <%= @strike.full %>
+</p>
+
+<%= link_to 'Edit', edit_strike_path(@strike) %> |
+<%= link_to 'Back', strikes_path %>

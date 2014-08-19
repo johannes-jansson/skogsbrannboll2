@@ -1,0 +1,37 @@
+<%= form_for(@strike) do |f| %>
+  <% if @strike.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@strike.errors.count, "error") %> prohibited this strike from being saved:</h2>
+
+      <ul>
+      <% @strike.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :onehand %><br>
+    <%= f.text_field :onehand %>
+  </div>
+  <div class="field">
+    <%= f.label :twohand %><br>
+    <%= f.text_field :twohand %>
+  </div>
+  <div class="field">
+    <%= f.label :burn %><br>
+    <%= f.text_field :burn %>
+  </div>
+  <div class="field">
+    <%= f.label :in %><br>
+    <%= f.text_field :in %>
+  </div>
+  <div class="field">
+    <%= f.label :full %><br>
+    <%= f.text_field :full %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

@@ -1,0 +1,33 @@
+<h1>Listing strikes</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Onehand</th>
+      <th>Twohand</th>
+      <th>Burn</th>
+      <th>In</th>
+      <th>Full</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @strikes.each do |strike| %>
+      <tr>
+        <td><%= strike.onehand %></td>
+        <td><%= strike.twohand %></td>
+        <td><%= strike.burn %></td>
+        <td><%= strike.in %></td>
+        <td><%= strike.full %></td>
+        <td><%= link_to 'Show', strike %></td>
+        <td><%= link_to 'Edit', edit_strike_path(strike) %></td>
+        <td><%= link_to 'Destroy', strike, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Strike', new_strike_path %>

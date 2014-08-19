@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  onehand: 9.99
+  twohand: 9.99
+  burn: 9.99
+  in: 9.99
+  full: 9.99
+
+two:
+  onehand: 9.99
+  twohand: 9.99
+  burn: 9.99
+  in: 9.99
+  full: 9.99
